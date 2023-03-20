@@ -1,0 +1,185 @@
+% \iffalse meta-comment
+%
+% Copyright (C) 2009 by Daniel G. Siegel <daniel@dgsiegel.net>
+% ---------------------------------------------------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Daniel G. Siegel.
+%
+% This work consists of the files tangocolors.dtx and tangocolors.ins
+% and the derived filebase tangocolors.sty.
+%
+% \fi
+%
+% \iffalse
+%<*driver>
+\ProvidesFile{tangocolors.dtx}
+%</driver>
+%<package>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+%<package>\ProvidesPackage{tangocolors}
+%<*package>
+    [2009/05/11 0.1 Tango colors for LaTeX]
+%</package>
+%
+%<*driver>
+\documentclass{ltxdoc}
+\usepackage{tangocolors}[2009/05/11]
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+\begin{document}
+  \DocInput{tangocolors.dtx}
+  \PrintChanges
+  \PrintIndex
+\end{document}
+%</driver>
+% \fi
+%
+% \CheckSum{89}
+%
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+%
+% \changes{0.1}{2009/05/11}{Converted to DTX file}
+%
+% \DoNotIndex{\newcommand,\newenvironment}
+%
+% \providecommand*{\url}{\texttt}
+% \GetFileInfo{tangocolors.dtx}
+% \title{The \textsf{tangocolors} package}
+% \author{Daniel G. Siegel \\ \url{daniel@dgsiegel.net}}
+% \date{\fileversion~from \filedate}
+%
+% \maketitle
+%
+% \section{Introduction}
+%
+% This package allows to use colors from the Tango color
+% palette\footnote{\url{http://tango.freedesktop.org/Tango\_Icon\_Theme\_Guidelines}}
+% easily in LaTeX.
+%
+% \section{Usage}
+%
+% The Tango color palette defines some color names and their RGB codes.
+% This \LaTeX macro package implements these color names, so
+% one can easily access these colors by their names. The package
+% uses the \verb|xcolor| package, so please refer to the documentation
+% to this package to learn how to access these colors.
+%
+% \DescribeMacro{\dumptangocolors}
+%
+% A macro to dump a table of the available additional colors like this.
+% \begin{verbatim}
+% \documentclass[11pt,a4paper]{article}
+% 
+% \usepackage{tangocolors}
+% 
+% \begin{document}
+%   \dumptangocolors
+% \end{document}
+% \end{verbatim}
+
+% \dumptangocolors
+%
+% \StopEventually{}
+%
+% \section{Implementation}
+%
+% \iffalse
+%<*package>
+% \fi
+%
+% Copyright 2012 Daniel G. Siegel \url{daniel@dgsiegel.net}
+%
+% This file may be distributed and/or modified
+%
+% \begin{enumerate}
+% \item under the LaTeX Project Public License and/or
+% \item under the GNU Public License.
+% \end{enumerate}
+%
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tangocolors}[2009/05/11 v0.1 Tango colors for LaTeX]
+\PassOptionsToPackage{table}{xcolor}
+\RequirePackage{xcolor}
+\definecolor{butter1}{rgb}{0.988,0.914,0.310}
+\definecolor{butter2}{rgb}{0.929,0.831,0.000}
+\definecolor{butter3}{rgb}{0.769,0.627,0.000}
+\definecolor{orange1}{rgb}{0.988,0.686,0.243}
+\definecolor{orange2}{rgb}{0.961,0.475,0.000}
+\definecolor{orange3}{rgb}{0.808,0.361,0.000}
+\definecolor{chocolate1}{rgb}{0.914,0.725,0.431}
+\definecolor{chocolate2}{rgb}{0.757,0.490,0.067}
+\definecolor{chocolate3}{rgb}{0.561,0.349,0.008}
+\definecolor{chameleon1}{rgb}{0.541,0.886,0.204}
+\definecolor{chameleon2}{rgb}{0.451,0.824,0.086}
+\definecolor{chameleon3}{rgb}{0.306,0.604,0.024}
+\definecolor{skyblue1}{rgb}{0.447,0.624,0.812}
+\definecolor{skyblue2}{rgb}{0.204,0.396,0.643}
+\definecolor{skyblue3}{rgb}{0.125,0.290,0.529}
+\definecolor{plum1}{rgb}{0.678,0.498,0.659}
+\definecolor{plum2}{rgb}{0.459,0.314,0.482}
+\definecolor{plum3}{rgb}{0.361,0.208,0.400}
+\definecolor{scarletred1}{rgb}{0.937,0.161,0.161}
+\definecolor{scarletred2}{rgb}{0.800,0.000,0.000}
+\definecolor{scarletred3}{rgb}{0.643,0.000,0.000}
+\definecolor{aluminium1}{rgb}{0.933,0.933,0.925}
+\definecolor{aluminium2}{rgb}{0.827,0.843,0.812}
+\definecolor{aluminium3}{rgb}{0.729,0.741,0.714}
+\definecolor{aluminium4}{rgb}{0.533,0.541,0.522}
+\definecolor{aluminium5}{rgb}{0.333,0.341,0.325}
+\definecolor{aluminium6}{rgb}{0.180,0.204,0.212}
+%    \end{macrocode}
+%
+% \begin{macro}{\dumptangocolors}
+%    \begin{macrocode}
+\newcommand{\dumptangocolors}{%
+  \begingroup
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{ccc}
+    \cellcolor{butter1}butter1          & \cellcolor{butter2}butter2                          & \cellcolor{butter3}butter3 \\
+    \cellcolor{orange1}orange1          & \cellcolor{orange2}orange2                          & \cellcolor{orange3}orange3 \\
+    \cellcolor{chocolate1}chocolate1    & \cellcolor{chocolate2}chocolate2                    & \cellcolor{chocolate3}chocolate3 \\
+    \cellcolor{chameleon1}chameleon1    & \cellcolor{chameleon2}chameleon2                    & \cellcolor{chameleon3}chameleon3 \\
+    \cellcolor{skyblue1}skyblue1        & \cellcolor{skyblue2}skyblue2                        & \cellcolor{skyblue3}\textcolor{white}{skyblue3} \\
+    \cellcolor{plum1}plum1              & \cellcolor{plum2}plum2                              & \cellcolor{plum3}\textcolor{white}{plum3} \\
+    \cellcolor{scarletred1}scarletred1  & \cellcolor{scarletred2}scarletred2                  & \cellcolor{scarletred3}\textcolor{white}{scarletred3} \\
+    \cellcolor{aluminium1}aluminium1    & \cellcolor{aluminium2}aluminium2                    & \cellcolor{aluminium3}aluminium3 \\
+    \cellcolor{aluminium4}aluminium4    & \cellcolor{aluminium5}\textcolor{white}{aluminium5} & \cellcolor{aluminium6}\textcolor{white}{aluminium6} \\
+    \end{tabular}
+  \endgroup
+}
+%    \end{macrocode}
+% \end{macro}
+%
+
+%
+% \iffalse
+%</package>
+% \fi
+%
+% \Finale
+\endinput
