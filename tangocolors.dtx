@@ -31,7 +31,7 @@
 %<package>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
 %<package>\ProvidesPackage{tangocolors}
 %<*package>
-    [2023/03/20 0.2 Tango colors for LaTeX]
+    [2023/03/30 0.3 Tango colors for LaTeX]
 %</package>
 %
 %<*driver>
@@ -69,6 +69,7 @@
 %
 % \changes{0.1}{2009/05/11}{Initial release}
 % \changes{0.2}{2023/03/20}{Converted to DTX file}
+% \changes{0.3}{2023/03/30}{Introduce line breaks in definition of \\dumptangocolors}
 %
 % \DoNotIndex{\newcommand,\newenvironment}
 %
@@ -125,7 +126,7 @@
 %
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{tangocolors}[2023/03/20 v0.2 Tango colors for LaTeX]
+\ProvidesPackage{tangocolors}[2023/03/20 v0.3 Tango colors for LaTeX]
 \PassOptionsToPackage{table}{xcolor}
 \RequirePackage{xcolor}
 \definecolor{butter1}{rgb}{0.988,0.914,0.310}
@@ -163,22 +164,30 @@
   \begingroup
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{ccc}
-    \cellcolor{butter1}butter1          & \cellcolor{butter2}butter2                          & \cellcolor{butter3}butter3 \\
-    \cellcolor{orange1}orange1          & \cellcolor{orange2}orange2                          & \cellcolor{orange3}orange3 \\
-    \cellcolor{chocolate1}chocolate1    & \cellcolor{chocolate2}chocolate2                    & \cellcolor{chocolate3}chocolate3 \\
-    \cellcolor{chameleon1}chameleon1    & \cellcolor{chameleon2}chameleon2                    & \cellcolor{chameleon3}chameleon3 \\
-    \cellcolor{skyblue1}skyblue1        & \cellcolor{skyblue2}skyblue2                        & \cellcolor{skyblue3}\textcolor{white}{skyblue3} \\
-    \cellcolor{plum1}plum1              & \cellcolor{plum2}plum2                              & \cellcolor{plum3}\textcolor{white}{plum3} \\
-    \cellcolor{scarletred1}scarletred1  & \cellcolor{scarletred2}scarletred2                  & \cellcolor{scarletred3}\textcolor{white}{scarletred3} \\
-    \cellcolor{aluminium1}aluminium1    & \cellcolor{aluminium2}aluminium2                    & \cellcolor{aluminium3}aluminium3 \\
-    \cellcolor{aluminium4}aluminium4    & \cellcolor{aluminium5}\textcolor{white}{aluminium5} & \cellcolor{aluminium6}\textcolor{white}{aluminium6} \\
+    \cellcolor{butter1}butter1          & \cellcolor{butter2}butter2
+& \cellcolor{butter3}butter3 \\
+    \cellcolor{orange1}orange1          & \cellcolor{orange2}orange2
+& \cellcolor{orange3}orange3 \\
+    \cellcolor{chocolate1}chocolate1    & \cellcolor{chocolate2}chocolate2
+& \cellcolor{chocolate3}chocolate3 \\
+    \cellcolor{chameleon1}chameleon1    & \cellcolor{chameleon2}chameleon2
+& \cellcolor{chameleon3}chameleon3 \\
+    \cellcolor{skyblue1}skyblue1        & \cellcolor{skyblue2}skyblue2
+& \cellcolor{skyblue3}\textcolor{white}{skyblue3} \\
+    \cellcolor{plum1}plum1              & \cellcolor{plum2}plum2
+& \cellcolor{plum3}\textcolor{white}{plum3} \\
+    \cellcolor{scarletred1}scarletred1  & \cellcolor{scarletred2}scarletred2
+ & \cellcolor{scarletred3}\textcolor{white}{scarletred3} \\
+    \cellcolor{aluminium1}aluminium1    & \cellcolor{aluminium2}aluminium2
+& \cellcolor{aluminium3}aluminium3 \\
+    \cellcolor{aluminium4}aluminium4    & \cellcolor{aluminium5}\textcolor{white}{aluminium5}
+& \cellcolor{aluminium6}\textcolor{white}{aluminium6} \\
     \end{tabular}
   \endgroup
 }
 %    \end{macrocode}
 % \end{macro}
 %
-
 %
 % \iffalse
 %</package>
